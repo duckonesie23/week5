@@ -9,5 +9,6 @@ public class TimeConversion {
         int newMinutes0 = (minutes-(newHours*60))/10;
         int newMinutes1 = (minutes-(newHours*60))%10;
         System.out.println("The time is: "+ newHours + ":" + newMinutes0 + newMinutes1);
+        input.close();
     }
 }

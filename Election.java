@@ -34,15 +34,14 @@ public class Election {
 
     NumberFormat percent = NumberFormat.getPercentInstance();
 
-    percentAwbrey = ((double)totalAwbrey/(double)totalVotes)*100;
-    percentMartinez = ((double)totalMartinez/(double)totalVotes)*100;
-    System.out.println(percentAwbrey+ "\t\t"+ percentMartinez);
+    percentAwbrey = ((double)totalAwbrey/(double)totalVotes);
+    percentMartinez = ((double)totalMartinez/(double)totalVotes);
 
     System.out.println("\nCandidate\tVotes Percentage");
     System.out.println("Awbrey\t\t"+ totalAwbrey + "\t" + percent.format(percentAwbrey));
     System.out.println("Martinez\t" + totalMartinez+ "\t" +percent.format(percentMartinez));
     System.out.println("\nTOTAL VOTES:\t"+totalVotes);
-    
+    input.close();
     }
 
 }
