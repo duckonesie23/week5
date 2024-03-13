@@ -1,4 +1,5 @@
 import java.util.*;
+import java.text.*;
 public class Geometry {
     public static void main(String[]args){
         Scanner input = new Scanner(System.in);
@@ -11,6 +12,8 @@ public class Geometry {
         int sideOne = (m*m)-(n*n);
         int sideTwo = 2*(m*n);
         int hypotenuse = (m*m) + (n*n);
-        System.out.print("Pythagrean triple: "+sideOne+", "+ sideTwo+ ", "+ hypotenuse);
+        System.out.println("Pythagorean triple: "+sideOne+", "+ sideTwo+ ", "+ hypotenuse);
+        NumberFormat money = NumberFormat.getCurrencyInstance();
+        System.out.print("Triple cost: "+money.format(sideOne*2.412)+", "+ money.format(sideTwo*3.767)+ ", "+ money.format(hypotenuse*15.758));
     }
 }
