@@ -15,5 +15,6 @@ public class Geometry {
         System.out.println("Pythagorean triple: "+sideOne+", "+ sideTwo+ ", "+ hypotenuse);
         NumberFormat money = NumberFormat.getCurrencyInstance();
         System.out.print("Triple cost: "+money.format(sideOne*2.412)+", "+ money.format(sideTwo*3.767)+ ", "+ money.format(hypotenuse*15.758));
+        input.close();
     }
 }

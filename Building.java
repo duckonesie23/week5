@@ -19,5 +19,6 @@ public class Building {
         System.out.println("Total volume in feet: "+totalVolumeFeet);
         System.out.println("Total volume in yards: "+totalVolumeYards);
         System.out.println("Total cost: "+money.format(cost));
+        input.close();
     }
 }
