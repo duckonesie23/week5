@@ -26,5 +26,6 @@ public class Grades {
             gradeLetter = 'F';
             System.out.println(gradeLetter+"-ind a new family >:(");
         }
+        input.close();
     }
 }
